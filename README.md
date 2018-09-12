@@ -9,6 +9,8 @@
 + gulp-imagemin
 + gulp-connect
 
-## install
-`npm i`
+## install  
+`npm i -D` 
+
+## run  
 `gulp`

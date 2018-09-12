@@ -1,9 +1,12 @@
 const gulp = require("gulp");
 const stylus = require('gulp-stylus');
 const pug = require('gulp-pug');
-const buildDirectory = './build'
 const connect = require('gulp-connect');
 const imagemin = require('gulp-imagemin');
+
+const config = {
+    buildDirectory: './build'
+}
 
 gulp.task('connect', (done) => {
     connect.server({
@@ -18,21 +21,21 @@ gulp.task('pug', () => {
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest(`${buildDirectory}/`))
+        .pipe(gulp.dest(`${config.buildDirectory}/`))
         .pipe(connect.reload());
 });
 
 gulp.task('stylus', () => {
     return gulp.src('stylus/*')
         .pipe(stylus())
-        .pipe(gulp.dest(`${buildDirectory}/css/`))
+        .pipe(gulp.dest(`${config.buildDirectory}/css/`))
         .pipe(connect.reload());
 });
 
 gulp.task('img', () => {
     return gulp.src('img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest(`${buildDirectory}/img/`))
+        .pipe(gulp.dest(`${config.buildDirectory}/img/`))
         .pipe(connect.reload());
 });
 
