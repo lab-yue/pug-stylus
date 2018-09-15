@@ -1,5 +1,5 @@
 {
-  "name": "pug-stylus",
+  "name": "pug-styl",
   "version": "1.0.0",
   "description": "gulp-pug-stylus setup cli",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "dev": "node gulpfile.js"
   },
   "bin": {
-    "pug-styl-create": "./bin/cli.js"
+    "pug-styl": "./bin/cli.js"
   },
   "keywords": [],
   "author": "yue",

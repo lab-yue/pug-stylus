@@ -9,11 +9,12 @@
 + gulp-connect
 
 ## install  
-`npm i pug-stylus --save-dev -g` 
+1. `clone and cd to this repo`
+2. `npm i --save-dev` 
 
 ## run  
 `gulp`
 
 ## use CLI
-
-`pug-styl-create`
+`npm i pug-styl --save -g` 
+`pug-styl create`
