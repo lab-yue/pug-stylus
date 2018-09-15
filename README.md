@@ -6,11 +6,14 @@
 + pug
 + gulp-pug
 + gulp-stylus
-+ gulp-imagemin
 + gulp-connect
 
 ## install  
-`npm i -D` 
+`npm i pug-stylus --save-dev -g` 
 
 ## run  
 `gulp`
+
+## use CLI
+
+`pug-styl-create`

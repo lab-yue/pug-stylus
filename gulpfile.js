@@ -2,7 +2,6 @@ const gulp = require("gulp");
 const stylus = require('gulp-stylus');
 const pug = require('gulp-pug');
 const connect = require('gulp-connect');
-const imagemin = require('gulp-imagemin');
 
 const config = {
     buildDirectory: './build'
@@ -34,7 +33,6 @@ gulp.task('stylus', () => {
 
 gulp.task('img', () => {
     return gulp.src('img/*')
-        .pipe(imagemin())
         .pipe(gulp.dest(`${config.buildDirectory}/img/`))
         .pipe(connect.reload());
 });
